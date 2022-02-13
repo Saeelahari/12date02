@@ -1,0 +1,63 @@
+ sugar=50
+oil=200
+biscuit=100
+soap=300
+rice=400
+sugarq=int(input('enter no of sugar packets: '))
+oilq=int(input('enter no of oil packets: '))                
+biscuitq=int(input('enter no of biscuit packets: '))
+soapq=int(input('enter no of soap packets: '))
+riceq=int(input('enter no of rice packets: '))
+bill=(sugarq*sugar)+(oilq*oil)+(biscuitq*biscuit)+(soapq*soap)+(riceq*rice)
+if bill>=5000 :
+    dis=bill*10/100
+    actual_bill=bill-dis
+    tax=actual_bill*10/100
+    final_bill=actual_bill+tax
+    print("Final bill amount :",final_bill)
+    
+elif bill>3000:
+    dis  = (bill*8)/100
+    actual_bill = bill-dis
+    tax = (actual_bill*10)/100
+    final_bill = actual_bill+tax
+    print("Final bill amount :",final_bill)
+    
+elif bill>2000:
+    dis = (bill*5)/100
+    actual_bill = bill- dis
+    tax = (actual_bill*18)/100
+    final_bill = actual_bill+tax
+    print("Final bill amount :",final_bill)
+    
+elif bill>1000:
+    dis = (bill*3)/100
+    actual_bill = bill- dis
+    tax = (actual_bill*18)/100
+    final_bill = actual_bill+tax 
+    print("Final bill amount :",final_bill)
+    
+else:
+    print("No discount applicable")
+    print("Final bill amount :",bill)
+[7:04 PM, 2/12/2022] Priya Reddy: a=int(input('enter a value: '))
+b=int(input('enter b value: '))
+if a==b:
+output:
+enter no of sugar packets:780
+enter no of oil packets:888
+enter no of biscut packets:888
+enter no of soap packets:888
+enter no of rice packets:888final bill amount:917730.0
+enter a value:6000
+enter b value:6000
+a equal to b
+    
+    print('a equals to b')
+if (a!=b):
+    print("a not equal to b")
+    
+    if a>b:
+        print('a greater than b')
+    else:
+        print("b greater than a")
